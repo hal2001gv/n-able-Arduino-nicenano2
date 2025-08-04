@@ -170,6 +170,7 @@ For boards without the Adafruit bootloader option clicking `Burn Bootloader` wil
  * Careful attention should be paid to selecting the correct bootloader (tools->Bootloader Type) for your build (if applicable) to ensure the correct linkage.
 
 ## Credits
+This used insights for the nice!nano v2 board from [ICantMakeThings](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support.git) as well as [LeeorNahum](https://github.com/LeeorNahum/n-able-Arduino-pro-micro-nrf52840.git).
 This core is based on [Arduino-nRF5](https://github.com/sandeepmistry/arduino-nRF5) by Sandeep Mistry,
 which is based on the [Arduino SAMD Core](https://github.com/arduino/ArduinoCore-samd).
 With some code from [Adafruit_nRF52_Arduino](https://github.com/adafruit/Adafruit_nRF52_Arduino)
