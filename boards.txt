@@ -797,6 +797,79 @@ feather52840.menu.bootloader.none.build.bootloader.file=tools/none_bootloader.he
 feather52840.menu.bootloader.none.upload.maximum_size=1032192
 
 
+
+nicenano2.name=Pro Micro nRF52840
+
+nicenano2.vid.0=0x239A
+nicenano2.pid.0=0x8029
+nicenano2.vid.1=0x239A
+nicenano2.pid.1=0x0029
+nicenano2.vid.2=0x239A
+nicenano2.pid.2=0x002A
+nicenano2.vid.3=0x239A
+nicenano2.pid.3=0x802A
+
+nicenano2.upload.tool=openocd
+nicenano2.upload.target=nrf52
+nicenano2.upload.jlink_device=nRF52840_xxAA
+nicenano2.upload.use_1200bps_touch=true
+nicenano2.upload.wait_for_upload_port=true
+nicenano2.upload.maximum_size=978944
+
+nicenano2.bootloader.tool=openocd
+
+nicenano2.build.mcu=cortex-m4
+nicenano2.build.f_cpu=64000000
+nicenano2.build.board=NRF52840_DK
+nicenano2.build.core=nRF5
+nicenano2.build.variant=pro_micro_nrf52840
+nicenano2.build.variant_system_lib=
+nicenano2.build.usb_manufacturer="Adafruit"
+nicenano2.build.usb_product="NiceNano v2"
+nicenano2.build.vid=0x239A
+nicenano2.build.pid=0x8029
+nicenano2.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+nicenano2.build.ldscript=nrf52840_xxaa.ld
+nicenano2.build.lfclk_flags=-DUSE_LFXO
+nicenano2.build.extra_flags=-DNRF52_SERIES -DNRF52840_XXAA {bootloader.flags} {build.flags.usb} -DCONFIG_NIMBLE_CPP_LOG_LEVEL={build.cpp_debug} {build.nimble_flags}
+nicenano2.build.dfu_pattern={adafruit-nrfutil.dfu_pattern}
+
+nicenano2.menu.role.all=All
+nicenano2.menu.role.all.build.nimble_flags=
+nicenano2.menu.role.periph=Peripheral
+nicenano2.menu.role.periph.build.nimble_flags=-DCONFIG_BT_NIMBLE_ROLE_CENTRAL_DISABLED -DCONFIG_BT_NIMBLE_ROLE_OBSERVER_DISABLED
+nicenano2.menu.role.adv=Advertiser
+nicenano2.menu.role.adv.build.nimble_flags=-DCONFIG_BT_NIMBLE_ROLE_CENTRAL_DISABLED -DCONFIG_BT_NIMBLE_ROLE_OBSERVER_DISABLED -DCONFIG_BT_NIMBLE_ROLE_PERIPHERAL_DISABLED
+nicenano2.menu.role.scan=Scanner
+nicenano2.menu.role.scan.build.nimble_flags=-DCONFIG_BT_NIMBLE_ROLE_CENTRAL_DISABLED -DCONFIG_BT_NIMBLE_ROLE_PERIPHERAL_DISABLED -DCONFIG_BT_NIMBLE_ROLE_CENTRAL_DISABLED
+nicenano2.menu.role.central=Client
+nicenano2.menu.role.central.build.nimble_flags=-DCONFIG_BT_NIMBLE_ROLE_PERIPHERAL_DISABLED -DCONFIG_BT_NIMBLE_ROLE_BROADCASTER_DISABLED
+
+nicenano2.menu.cppDbgLvl.none=None
+nicenano2.menu.cppDbgLvl.none.build.cpp_debug=0
+nicenano2.menu.cppDbgLvl.error=Error
+nicenano2.menu.cppDbgLvl.error.build.cpp_debug=1
+nicenano2.menu.cppDbgLvl.warn=Warn
+nicenano2.menu.cppDbgLvl.warn.build.cpp_debug=2
+nicenano2.menu.cppDbgLvl.info=Info
+nicenano2.menu.cppDbgLvl.info.build.cpp_debug=3
+nicenano2.menu.cppDbgLvl.debug=Debug
+nicenano2.menu.cppDbgLvl.debug.build.cpp_debug=4
+
+nicenano2.menu.bootloader.adafruit=Adafruit (No softdevice)
+nicenano2.menu.bootloader.adafruit.bootloader.flags=-DUSE_ADA_BL
+nicenano2.menu.bootloader.adafruit.upload.tool=adafruit-nrfutil
+nicenano2.menu.bootloader.adafruit.upload.protocol=adafruit-nrfutil
+nicenano2.menu.bootloader.adafruit.build.ldscript=nrf52_xxaa_adabl.ld
+nicenano2.menu.bootloader.adafruit.build.dfu_pattern={adafruit-nrfutil.dfu_pattern}
+nicenano2.menu.bootloader.adafruit.build.bootloader.file=variants/{build.variant}/ada_bootloader.hex
+nicenano2.menu.bootloader.none=No bootloader
+nicenano2.menu.bootloader.none.bootloader.flags=
+nicenano2.menu.bootloader.none.build.bootloader.file=tools/none_bootloader.hex
+nicenano2.menu.bootloader.none.upload.maximum_size=1032192
+
+
+
 feather52840sense.name=Adafruit Feather nRF52840 Sense
 
 feather52840sense.vid.0=0x239A
