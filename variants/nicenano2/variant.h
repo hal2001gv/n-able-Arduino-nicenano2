@@ -77,7 +77,7 @@ extern "C"
 #define PIN_115  47  // P1.15 (MISO)
 
 
-/* Jan
+/* Out HALGV2001
 // Buttons
 #define PIN_BUTTON1          (34) // P1_02
 
@@ -132,10 +132,9 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 #define PIN_WIRE_SDA         (36) // P1_04
 #define PIN_WIRE_SCL         (38) // P1_06
 
-/* Jan
 // Power control
 #define PIN_VCC_CONTROL      (13) // P0_13 - VCC control pin (Shuts off the power to VCC when you set it to high; This saves on battery immensely for LEDs of all kinds that eat power even when off
-*/
+
 
 #ifdef __cplusplus
 }
