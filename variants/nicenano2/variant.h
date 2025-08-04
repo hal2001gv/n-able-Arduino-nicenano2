@@ -17,9 +17,9 @@ extern "C"
 #endif // __cplusplus
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (34)
-#define NUM_DIGITAL_PINS     (34)
-#define NUM_ANALOG_INPUTS    (4) // A0, A2, A5, A7
+#define PINS_COUNT           (48)
+#define NUM_DIGITAL_PINS     (48)
+#define NUM_ANALOG_INPUTS    (6)
 #define NUM_ANALOG_OUTPUTS   (0)
 
 // LEDs
@@ -52,9 +52,6 @@ static const uint8_t A7  = PIN_A7;
 #define PIN_VBAT           PIN_A2
 #define PIN_NFC1           (9)  // P0_09
 #define PIN_NFC2           (10) // P0_10
-#define PIN_VBAT           PIN_A2
-#define PIN_NFC1           (9)  // P0_09
-#define PIN_NFC2           (10) // P0_10
 
 static const uint8_t AREF = PIN_AREF;
 
@@ -70,11 +67,11 @@ static const uint8_t AREF = PIN_AREF;
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (32) // P1_00 (SDI)
-#define PIN_SPI_MOSI         (24) // P0_24 (SDO)
-#define PIN_SPI_SCK          (22) // P0_22 (SCK)
+#define PIN_SPI_MISO         (47) // P1_15 (SDI)
+#define PIN_SPI_MOSI         (45) // P1_13 (SDO)
+#define PIN_SPI_SCK          (43) // P1_11 (SCK)
 
-static const uint8_t SS   = (5); // P0_05
+static const uint8_t SS   = (39); // P1_07
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
@@ -84,8 +81,8 @@ static const uint8_t SCK  = PIN_SPI_SCK;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (17) // P0_17
-#define PIN_WIRE_SCL         (20) // P0_20
+#define PIN_WIRE_SDA         (36) // P1_04
+#define PIN_WIRE_SCL         (38) // P1_06
 
 // Power control
 #define PIN_VCC_CONTROL      (13) // P0_13 - VCC control pin (Shuts off the power to VCC when you set it to high; This saves on battery immensely for LEDs of all kinds that eat power even when off
