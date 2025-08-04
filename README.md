@@ -1,6 +1,6 @@
-# n-able Arduino core
+# n-able Arduino core for nice!nano v2
 
-An Arduino Core for ARM based BLE boards supported by the NimBLE stack.
+An Arduino Core for nice!nano v2 supported by the NimBLE stack.
 
 If you are interested in assisting the development of this project please submit issues and PR's. Or become a collaborator!
 
