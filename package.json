@@ -1,7 +1,7 @@
 {
-  "name": "framework-n-able-arduino",
-  "version": "0.2.0",
-  "description": "Arduino Wiring-based Framework for Arm BLE devices supported by the NimBLE stack",
+  "name": "framework-n-able-arduino-nicenano2",
+  "version": "1.0.0",
+  "description": "Arduino Wiring-based Framework for nicenano2 with NimBLE stack support",
   "keywords": [
     "framework",
     "Arduino",
@@ -13,6 +13,6 @@
   "license": "LGPL-2.1-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/h2zero/n-able-Arduino.git"
+    "url": "https://github.com/hal2001gv/n-able-Arduino-nicenano.git"
   }
 }
