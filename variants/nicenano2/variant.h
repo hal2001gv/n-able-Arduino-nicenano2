@@ -41,6 +41,7 @@ extern "C"
 #define PIN_A5               (29) // P0_29 (AIN5)
 #define PIN_A7               (31) // P0_31 (AIN7)
 
+/* Jan
 static const uint8_t A0  = PIN_A0;
 static const uint8_t A2  = PIN_A2;
 static const uint8_t A5  = PIN_A5;
@@ -54,6 +55,8 @@ static const uint8_t A7  = PIN_A7;
 #define PIN_NFC2           (10) // P0_10
 
 static const uint8_t AREF = PIN_AREF;
+*/
+
 
 /*
  * Serial interfaces
@@ -84,8 +87,10 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 #define PIN_WIRE_SDA         (36) // P1_04
 #define PIN_WIRE_SCL         (38) // P1_06
 
+/* Jan
 // Power control
 #define PIN_VCC_CONTROL      (13) // P0_13 - VCC control pin (Shuts off the power to VCC when you set it to high; This saves on battery immensely for LEDs of all kinds that eat power even when off
+*/
 
 #ifdef __cplusplus
 }
